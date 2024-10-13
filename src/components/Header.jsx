@@ -7,11 +7,15 @@ const Header = () => {
   const toggleNavbarList = () => {
     setOpenNavbarList(!openNavbarList);
   };
-  const funcNavbarList = openNavbarList ? "block" : "hidden";
 
   return (
-    <header className="w-full">
-      <nav className="px-7 py-5 flex flex-col gap-7 md:justify-between md:flex-row md:px-10">
+    <header className="w-full fixed top-0 left-0 z-50">
+      <nav
+        className={`px-7 py-5 flex flex-col gap-7 ${
+          openNavbarList ? "bg-white text-black rounded-b-3xl" : "text-white"
+        } md:items-center md:justify-between md:flex-row md:px-20`}
+      >
+        {/* logo */}
         <div className="flex items-center justify-between">
           <div className="logo">
             <h1 className="md:hidden">T-Film</h1>
@@ -24,13 +28,20 @@ const Header = () => {
             <i className="ri-menu-line text-3xl"></i>
           </button>
         </div>
-        <div className={`navbar-list md:block ${funcNavbarList}`}>
-          <ul className="flex flex-col gap-5 md:flex-row">
-            <li>Home</li>
-            <li>Movies</li>
-            <li>TV Series</li>
+        {/* logo end */}
+        {/* list */}
+        <div
+          className={`navbar-list md:block ${
+            openNavbarList ? "block" : "hidden"
+          }`}
+        >
+          <ul className="flex flex-col gap-3 md:gap-14 md:flex-row">
+            <li className="text-xl">Home</li>
+            <li className="text-xl">Movies</li>
+            <li className="text-xl">Series</li>
           </ul>
         </div>
+        {/* list end */}
       </nav>
     </header>
   );
