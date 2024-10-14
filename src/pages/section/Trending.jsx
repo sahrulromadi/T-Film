@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../../App.css";
-import { getTrendingList } from "../../api";
+import { getTrendingList } from "../../data/api";
 
 const Trending = () => {
   const imgUrl = import.meta.env.VITE_BASEIMGURL;

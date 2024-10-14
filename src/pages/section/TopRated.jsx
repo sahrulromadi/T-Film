@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../../App.css";
-import { getTopRatedList } from "../../api";
+import { getTopRatedList } from "../../data/api";
 
 const TopRated = () => {
   const imgUrl = import.meta.env.VITE_BASEIMGURL;

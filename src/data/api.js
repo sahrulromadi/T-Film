@@ -26,3 +26,15 @@ export const getTopRatedList = async () => {
     console.error("Error fetching:", error);
   }
 };
+
+export const getNowPlaying = async () => {
+  try {
+    const movies = await axios.get(
+      `${baseUrl}/movie/now_playing?api_key=${apiKey}`
+    );
+    // kembalikan data results
+    return movies.data.results;
+  } catch (error) {
+    console.error("Error fetching:", error);
+  }
+};
