@@ -16,11 +16,11 @@ const Footer = () => {
       {/* background end */}
       {/* logo */}
       <div className="logo flex justify-center items-center">
-        <img src={Logo} alt="logo" className="w-1/6 md:w-1/12" />
+        <img src={Logo} alt="logo" className="w-1/6 md:w-[7%] lg:w-[7.5%]" />
       </div>
       {/* logo end */}
       {/* grid */}
-      <div className="grid grid-cols-1 text-center gap-10 text-white font-semibold mt-10 justify-items-center md:grid-cols-3 md:text-left md:gap-0 md:mt-28 md:px-28 lg:px-44">
+      <div className="grid grid-cols-1 text-center gap-10 text-white font-semibold mt-10 justify-items-center md:grid-cols-3 md:text-left md:gap-0 md:mt-14 md:px-28 lg:px-44 lg:mt-16">
         <div className="items-1">
           <ul className="space-y-1">
             <li>Home</li>

@@ -5,7 +5,7 @@ import TopRated from "./section/TopRated";
 
 const Home = () => {
   return (
-    <main className="flex flex-col min-h-screen space-y-10 bg-background">
+    <main className="flex flex-col min-h-screen space-y-10 pb-10 bg-background">
       <Hero />
       <Trending />
       <TopRated />
