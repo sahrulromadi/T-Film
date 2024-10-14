@@ -36,9 +36,9 @@ const Header = () => {
           }`}
         >
           <ul className="flex flex-col gap-3 md:gap-14 md:flex-row">
-            <li className="text-xl">Home</li>
-            <li className="text-xl">Movies</li>
-            <li className="text-xl">Series</li>
+            <li>Home</li>
+            <li>Movies</li>
+            <li>Series</li>
           </ul>
         </div>
         {/* list end */}
