@@ -1,12 +1,21 @@
 import React, { useState, useEffect } from "react";
 import "../../App.css";
-import { getMoviesList } from "../../api";
+import { getTopRatedList } from "../../api";
 
 const TopRated = () => {
+  const imgUrl = import.meta.env.VITE_BASEIMGURL;
+  const [moviesList, setMoviesList] = useState([]);
+
+  useEffect(() => {
+    getTopRatedList().then((result) => {
+      setMoviesList(result);
+    });
+  }, []);
+
   return (
     <section className="px-7 space-y-5 text-white md:px-20">
       <div className="title flex justify-between">
-        <h3 className="font-bold">TopRated Movies</h3>
+        <h3 className="font-bold">Top Rated Movies</h3>
         <button className="border border-white rounded-xl bg-transparent px-5">
           View More
         </button>
