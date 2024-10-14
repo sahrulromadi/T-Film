@@ -4,7 +4,7 @@ import Logo from "../../public/assets/img/logo.png";
 
 const Footer = () => {
   return (
-    <footer className="relative z-10 py-10 md:py-20">
+    <footer className="relative z-20 py-10 md:py-20">
       {/* background */}
       <div className="absolute inset-0 -z-50">
         <img
