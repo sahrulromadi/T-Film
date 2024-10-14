@@ -21,3 +21,7 @@ h3 {
 h4 {
   @apply text-lg font-medium md:text-2xl;
 }
+
+.bg-background {
+  background-color: #0f0f0f;
+}
